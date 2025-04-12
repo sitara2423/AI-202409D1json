@@ -1,0 +1,46 @@
+[
+    {
+        "id" : 1 ,
+        "name" : "NikeAQ34" ,
+        "price" : 15000 ,
+        "description" : "Hello" ,
+        "qyt" : 45,
+        "images" : "images/n1.webp"
+    },
+
+    {
+        "id" : 2 , 
+        "name" : "NikeFQ35",
+        "price" : 20000 , 
+        "description" : "Hello",
+        "qyt" : 65 ,
+        "images" : "images/n2.webp"
+    },
+
+    {
+        "id" : 3 ,
+        "name" : "NikeSY36",
+        "price" : 25000 , 
+        "description" : "Hello" ,
+        "qyt" : 55 ,
+        "images" : "images/n3.webp"
+    },
+
+    {
+        "id" : 4 ,
+        "name" : "NikeAS23" ,
+        "price" : 30000 , 
+        "description" : "Hello" ,
+        "qyt" : 65 ,
+        "images" : "images/n4.webp"
+    },
+
+    {
+        "id" : 5 ,
+        "name" : "NikeAQ38" , 
+        "price" :35000 ,
+        "description" : "Hello" ,
+        "qyt" : 25 ,
+        "images" : "images/n5.webp"
+    }
+]
