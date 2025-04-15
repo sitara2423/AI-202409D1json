@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container p-5">
+        <div class="row" id="row1">
+           
+        </div>
+
+    </div>
+    
+</body>
+<script src="jquery/jquery-3.7.1.min.js"></script>
+<script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+<script>
+    let productRow1=$("#r1");
+    let col="" ;
+    $.ajax(
+        {
+            url: "product.json",
+            type: "get",
+            success: function(response){
+                console.log(response),
+                $.each(response,function(key,value){
+                    //console.log(value.price);
+                    col+= ` <div class="col-md-3">
+                <div class="card text-start">
+                    <img class="card-img-top" src="`+value.images+`" alt="Title" />
+                    <div class="card-body">
+                        <h4 class="card-title">`+value.name+`</h4>
+                        <p class="card-text">`+value.price+`</p>
+                    </div>
+                </div>
+                
+            </div>`
+                })
+
+                }
+
+            }
+    );
+    productRow1.html(col);
+
+</script>
+</html>
