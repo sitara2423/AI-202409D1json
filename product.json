@@ -33,14 +33,5 @@
         "description" : "Hello" ,
         "qyt" : 65 ,
         "images" : "images/n4.webp"
-    },
-
-    {
-        "id" : 5 ,
-        "name" : "NikeAQ38" , 
-        "price" :35000 ,
-        "description" : "Hello" ,
-        "qyt" : 25 ,
-        "images" : "images/n5.webp"
     }
 ]
