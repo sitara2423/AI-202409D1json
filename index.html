@@ -39,7 +39,7 @@
             success: function(response){
                 console.log(response);
                 $.each(response,function(key,value){
-                    //console.log(value.name);
+                    // console.log(value.name);
 
 
                     col += ` <div class="col-md-4" id="r1">
@@ -48,6 +48,7 @@
                     <div class="card-body">
                         <h4 class="card-title">`+value.name+`</h4>
                         <p class="card-text">`+value.price+`</p>
+                        <a href="detail.html?pId=`+value.id+`&pName=`+value.name+`&pPrice=`+value.price+`&pDes=`+value.description+`&pImage=`+value.images+`" class="card-text">detail</a>
                     </div>
                 </div>
                 
