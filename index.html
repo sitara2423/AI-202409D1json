@@ -10,32 +10,39 @@
 <body>
     <!--container start-->
     <div class="container p-5">
-        <!--card start-->
-        <div class="row" id="row1">
+        <!--row start-->
+        <div class="row" id="r1">
+           
            
         </div>
+        </div>
+        <!--row end-->
 
     </div>
     
     <!--container end-->
+
 </body>
+<!--script start-->
 <!--jquery link-->
 <script src="jquery/jquery-3.7.1.min.js"></script>
 <!--bootstrap js link -->
 <script src="bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
 <!--internal js-->
 <script>
-    let productRow1=$("#r1");
-    let col="" ;
+    let productsRow1=$("#r1");
+    let col = " " ;
     $.ajax(
         {
             url: "product.json",
             type: "get",
             success: function(response){
-                console.log(response),
+                console.log(response);
                 $.each(response,function(key,value){
-                    //console.log(value.price);
-                    col+= ` <div class="col-md-3">
+                    //console.log(value.name);
+
+
+                    col += ` <div class="col-md-4" id="r1">
                 <div class="card text-start">
                     <img class="card-img-top" src="`+value.images+`" alt="Title" />
                     <div class="card-body">
@@ -45,13 +52,14 @@
                 </div>
                 
             </div>`
-                })
-
-                }
-
+                });
+                
+                productsRow1.html(col);
             }
+            
+        }
     );
-    productRow1.html(col);
-
+    
 </script>
+<!--script end-->
 </html>
