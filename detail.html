@@ -28,16 +28,16 @@
 <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"> </script>
 <!--internal script-->
 <script>
-    let url = location.herf ;
+    let url = location.href ;
     console.log(url);
     let urlobj = new URL(url);
-    console.log(urlobj);
-    let  productImages = urlobj.searchParams.get("pImages");
+    // console.log(urlobj);
+    let  productImages = urlobj.searchParams.get("pImage");
     let productName = urlobj.searchParams.get("pName");
     let productPrice = urlobj.searchParams.get("pPrice");
     let productDescription = urlobj.searchParams.get("pDes");
     console.log(urlobj.searchParams.get("pId"));
-    $("#productDetails").html(`     <div class="card-md-5">
+    $("#productDetails").html(`<div class="col-md-5">
         <div class="card">
                  <img class="card-img-top" src="`+productImages+`" alt="Title" />
              </div>
@@ -46,7 +46,7 @@
                  <div class="card">
                      <div class="card-body">
                          <h4 class="card-title">`+productName+`</h4>
-                         <p class="card-text pt-5">`+productDes+`</p>
+                         <p class="card-text pt-5">`+productDescription+`</p>
                          <p class="card-text pt-2">`+productPrice+`</p>
                          <button class="btn btn-primary">Add to Cart</button>
                      </div>

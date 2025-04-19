@@ -12,7 +12,7 @@
         "id" : 2 , 
         "name" : "NikeFQ35",
         "price" : 20000 , 
-        "description" : "The Air Max Alpha Trainer 6 brings sturdiness and comfort, the best of both worlds, to your toughest workouts. A flat, wide base helps keep you from sinking, so you can set and hit your goals. The robust heel, boosted by visible "performance Air" cushioning, offers dependable stability when digging deep for one more rep.",
+        "description" : "The Air Max Alpha Trainer 6 brings sturdiness and comfort, the best of both worlds, to your toughest workouts. A flat, wide base helps keep you from sinking, so you can set and hit your goals. The robust heel, boosted by visible  cushioning, offers dependable stability when digging deep for one more rep.",
         "qyt" : 65 ,
         "images" : "images/n2.webp"
     },
@@ -30,7 +30,7 @@
         "id" : 4 ,
         "name" : "NikeAS23" ,
         "price" : 30000 , 
-        "description" : "The Air Max Alpha Trainer 6 brings sturdiness and comfort, the best of both worlds, to your toughest workouts. A flat, wide base helps keep you from sinking, so you can set and hit your goals. The robust heel, boosted by visible "performance Air" cushioning, offers dependable stability when digging deep for one more rep." ,
+        "description" : "The Air Max Alpha Trainer 6 brings sturdiness and comfort, the best of both worlds, to your toughest workouts. A flat, wide base helps keep you from sinking, so you can set and hit your goals. The robust heel, boosted by visible  cushioning, offers dependable stability when digging deep for one more rep." ,
         "qyt" : 65 ,
         "images" : "images/n4.webp"
     }
