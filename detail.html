@@ -11,14 +11,8 @@
     <!--container start-->
     <div class="container mt-5 p-5">
         <!--row start-->
-        <div class="row justify-content-around text-justify">
-            <div class="col--md-5">
-
-            </div>
-            <div class="col-md-6 ">
-
-            </div>
-          
+        <div class="row justify-content-around text-justify" id="productDetails">
+       
         </div>
         <!--row end-->
 
@@ -32,4 +26,33 @@
 <script src="/jquery/jquery-3.7.1.min.js"></script>
 <!--bootstrap js link-->
 <script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"> </script>
+<!--internal script-->
+<script>
+    let url = location.herf ;
+    console.log(url);
+    let urlobj = new URL(url);
+    console.log(urlobj);
+    let  productImages = urlobj.searchParams.get("pImages");
+    let productName = urlobj.searchParams.get("pName");
+    let productPrice = urlobj.searchParams.get("pPrice");
+    let productDescription = urlobj.searchParams.get("pDes");
+    console.log(urlobj.searchParams.get("pId"));
+    $("#productDetails").html(`     <div class="card-md-5">
+        <div class="card">
+                 <img class="card-img-top" src="`+productImages+`" alt="Title" />
+             </div>
+             </div>
+             <div class="col-md-6 ">
+                 <div class="card">
+                     <div class="card-body">
+                         <h4 class="card-title">`+productName+`</h4>
+                         <p class="card-text pt-5">`+productDes+`</p>
+                         <p class="card-text pt-2">`+productPrice+`</p>
+                         <button class="btn btn-primary">Add to Cart</button>
+                     </div>
+                 </div>
+             </div>
+           `)
+
+</script>
 </html>

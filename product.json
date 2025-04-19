@@ -3,7 +3,7 @@
         "id" : 1 ,
         "name" : "NikeAQ34" ,
         "price" : 15000 ,
-        "description" : "Hello" ,
+        "description" : "Nike Air Max Solo Men's Shoes These sneakers are for Air Max superfans. By combining elements from past Air Max models, we created a whole new look. The heel cup is inspired by the AM90. And the textured Max Air units? They're influenced by the AM180 and deliver just the right amount of cushioning. Go ahead—Max out your look. Synthetic leather in the upper mixes with airy mesh to keep these shoes durable and breathable. Plush and comfortable, Max Air cushioning has just the right amount of support. Rubber outsole gives you durable traction." ,
         "qyt" : 45,
         "images" : "images/n1.webp"
     },
@@ -12,7 +12,7 @@
         "id" : 2 , 
         "name" : "NikeFQ35",
         "price" : 20000 , 
-        "description" : "Hello",
+        "description" : "The Air Max Alpha Trainer 6 brings sturdiness and comfort, the best of both worlds, to your toughest workouts. A flat, wide base helps keep you from sinking, so you can set and hit your goals. The robust heel, boosted by visible "performance Air" cushioning, offers dependable stability when digging deep for one more rep.",
         "qyt" : 65 ,
         "images" : "images/n2.webp"
     },
@@ -21,7 +21,7 @@
         "id" : 3 ,
         "name" : "NikeSY36",
         "price" : 25000 , 
-        "description" : "Hello" ,
+        "description" : "Nike Air Max Solo Men's Shoes These sneakers are for Air Max superfans. By combining elements from past Air Max models, we created a whole new look. The heel cup is inspired by the AM90. And the textured Max Air units? They're influenced by the AM180 and deliver just the right amount of cushioning. Go ahead—Max out your look. Synthetic leather in the upper mixes with airy mesh to keep these shoes durable and breathable. Plush and comfortable, Max Air cushioning has just the right amount of support. Rubber outsole gives you durable traction." ,
         "qyt" : 55 ,
         "images" : "images/n3.webp"
     },
@@ -30,7 +30,7 @@
         "id" : 4 ,
         "name" : "NikeAS23" ,
         "price" : 30000 , 
-        "description" : "Hello" ,
+        "description" : "The Air Max Alpha Trainer 6 brings sturdiness and comfort, the best of both worlds, to your toughest workouts. A flat, wide base helps keep you from sinking, so you can set and hit your goals. The robust heel, boosted by visible "performance Air" cushioning, offers dependable stability when digging deep for one more rep." ,
         "qyt" : 65 ,
         "images" : "images/n4.webp"
     }
