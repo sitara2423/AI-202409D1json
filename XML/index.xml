@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aptech xmlns:s1="https//abc.com" xmlns:s2="https//xyz.com" xmlns:s3="https//pqr.com" xmlns:s4="https//def.com" xmlns:s5="https//ghi.com" xmlns:sr1="https//jkl.com" xmlns:sr2="https//mno.com"
+xmlns:sr3="https//stu.com" xmlns:sr4="https//vwx.com" xmlns:sr5="https//yz.com">
+
+<students>
+<s1:student>
+     <id>1</id>
+     <name>Ali</name>
+     <course>CPISM</course>
+</student>
+<s2:student>
+        <id>2</id>
+        <name>Hamza</name>
+        <course>DISM</course>
+</student> 
+<s3:student>
+        <id>3</id>
+        <name>Arham</name>
+        <course>DISM</course>
+</student>  
+<s4:student>
+        <id>4</id>
+        <name>Hassan</name>
+        <course>ADSE</course>
+</student>  
+<s5:student>
+        <id>5</id>
+        <name>MUtahir</name>
+        <course>ADSE</course>
+</student>         
+</students>
+<sro>
+    <sr1:srm>
+        <id>1</id>
+        <name>Aqsa</name>
+        <role>manager</role>
+    </srm>
+    <sr2:srm>
+        <id>2</id>
+        <name>Maliaka</name>
+        <role>Manager</role>
+    </srm>
+    <sr3:srm>
+        <id>3</id>
+        <name>Atif</name>
+        <role>student department</role>
+    </srm>
+    <sr4:srm>
+        <id>4</id>
+        <name>mahazaib</name>
+        <role>manager</role>
+    </srm>
+    <sr5:srm>
+        <id>5</id>
+        <name>kinza</name>
+        <role>manager</role>
+    </srm>
+</sro>
+</aptech>
