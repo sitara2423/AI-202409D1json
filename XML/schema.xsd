@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/XMLSchema">
+    <xs:element name = "aptech">
+        <xs:complexType>
+            <xs:sequence> 
+                <xs:element name = "student" minOccurs="1" maxOccurs="10">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="id" type="xs:integer"/>
+                            <xs:element name="studentName" type="xs:string"></xs:element>
+                            <xs:element name="email" type="xs:string"></xs:element>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element name="sro" minOccurs="1" maxOccurs="10">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="id" type="xs:integer"/>
+                                <xs:element name="studentName" type="xs:string"></xs:element>
+                                <xs:element name="role" type="xs:string"></xs:element>
+                    </xs:sequence>
+                </complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
