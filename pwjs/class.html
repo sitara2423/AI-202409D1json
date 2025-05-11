@@ -1,19 +1,55 @@
 <script>
-    class human{
-        constructor(name , age ) {
-            
+    class Human{
 
-        }
+        name ;
+        food ;
+        lang ;
+        age ;
+        place ;
+      
+
+        constructor(sName , sFood , sLang , sAge , sPlace )  {
+            this.name = sName ;
+            this.food = sFood ;
+            this.lang = sLang ;
+            this.age = sAge ;
+            this.place = sPlace ;
+          }
         eat () {
-
+            console.log(this.name + " eats " + this.food );
         }
         speak () {
-
+            console.log(this.name + " can speak " + this.lang) ;
         }
-        walk () {
-
+        walk() {
+            console.log(this.name +  " can walk in " + this.place) ;
         }
     }
-    let human1 = new Human () ;
+    let Human1 = new Human ('Ali' , 'Biryani' , 'English' , '21' ,'Park') ;
+    Human1.eat() ;
+    Human1.walk();
+    let std2 = new Human ('Aqsa' , 'Dal Chawal' , 'English');
+    std2.eat();
+    std2.lang();
 
+    class Fruit{
+        name ;
+        fruit ;
+        taste;
+
+
+        constructor(sName , sFruit , sTaste){
+            this.name = sName ;
+            this.fruit = sFruit ;
+            this.taste = sTaste ;
+        }
+        fruit(){
+            console.log(this.name + " can eat" + this.fruit) ;
+        }
+        taste(){
+            console.log(this.name + " mango " + this.taste) ;
+        }
+    }
+let fruit1 = new Fruit ('Ali' , 'Mango' , 'Sweet' ) ; 
+fruit1.fruit();
 </script>

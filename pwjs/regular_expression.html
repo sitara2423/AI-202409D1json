@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/pwjs/bootstrap-5.0.2-dist/css/bootstrap-grid.min.css">
+</head>
+<body>
+    <div class="container p-5">
+        <div class="mb-3">
+            <label for="" class="form-label">Name</label>
+            <input
+                type="text"
+                name=""
+                id="userName"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId"></small>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Email</label>
+            <input
+                type="text"
+                name=""
+                id="userEmail"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId"></small>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Password</label>
+            <input
+                type="text"
+                name=""
+                id="userPassword"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId"></small>
+        </div>
+        <div class="mb-3">
+            <label for="" class="form-label">Confirm Password</label>
+            <input
+                type="text"
+                name=""
+                id="userConfirmPassword"
+                class="form-control"
+                placeholder=""
+                aria-describedby="helpId"
+            />
+            <small id="helpId"></small>
+        </div>
+        <button class="btn-btn-info">Add</button>
+    </div>
+    
+</body>
+<script src="/pwjs/jquery/jquery-3.7.1.min.js"></script>
+<script src="/pwjs/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    $("#userName").keyup(function(){
+        let uName = $(this).val();
+        let uNameRE = /^[a-zA-Z\s]{3,10}$/ ;
+        if(!uNameRE.test(uName)){
+            $(this).css('border' , '2px solid red');
+            $(this).next ('small').show().text('Please Enter Valid Name').css('color' , 'red');
+        }
+        else{
+            $(this).css('border' , '2px solid green');
+            $(this).next ('small').hide();
+        }
+        // console.log(uName);
+    });
+    $("#userEmail").keyup(function(){
+       let uEmail =$(this).val();
+         let uEmailRE = /^[a-zA-Z0-9_.]{4,10}[@][a-z]{5}[.][a-z]{3}$/ ;
+         if (!uEmailRE.test(uEmail)){
+             $(this).css('border','2px solid red');
+             $(this).next ('small').show().text('Enter A Valid Email').css('color','red')
+         }
+         else{
+             $(this).css('border','2px solid green');
+             $(this).next('small').hide();
+         }
+        //  console.log(uEmail);
+     });
+     $("#userPassword").keyup(function(){
+         let uPassword = $(this).val();
+         let uPasswordRE = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[^a-zA-Z0-9]).{8,}$/ ;
+         if(!uPasswordRE.test(uPassword)){
+             $(this).css('border','2px solid red');
+             $(this).next('small').show().text('password should contain at least one upper one lower one digit and one special character').css('color' , 'red');
+         }
+         else{
+             $(this).css('border', '2px solid green');
+             $(this).next('small').hide();
+         }
+         console.log(uPassword)
+     });
+     $("#userConfirmPassword").keyup(function(){
+         let uPassword = $("#userPassword").val();
+         let uConfirmPassword = $(this).val();
+        if(uPassword){
+            // console.log(uPassword);
+            if(uConfirmPassword != uPassword){
+                console.log('not');
+             $(this).css('border' , '2px solid red');
+             $(this).next('small').show().text('confirm password should be match');
+         }
+         else{
+            // console.log('matched');
+             $(this).css ('border','2px solid green');
+              $(this).next('small').hide();
+          }
+        }
+        else{
+            $(this).css('border' , '2px solid red');
+            $(this).next('small').show().text('required');
+        }
+        //  console.log(uConfirmPassword);
+ });
+
+
+</script>
+</html>
