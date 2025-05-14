@@ -9,36 +9,35 @@
 <body>
     <div class="container p-5">
         <a href="regular_expression.html" class="btn-btn-info">Add</a>
-     <div class="table">
-            <thead>
-                <tr>
-                    <th scope="col">Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Password</th>
-                </tr>
-            </thead>
-            <tbody>
-             
-            </tbody>
-        </table>
-     </div>
-     
-    </div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Password</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </div>
+        
     
 </body>
 <script src="/pwjs/jquery/jquery-3.7.1.min.js"></script>
 <script src="/pwjs/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
 <script>
     console.log(localStorage.getItem('students'));
-    let allSUser = JSON.parse(localStorage.getItem('students'));
-    console.log(allSUser);
-    allSUser.forEach(element => {
+    let allSUsers = JSON.parse(localStorage.getItem('students'));
+    console.log(allSUsers);
+    allSUsers.forEach(element=>{
         //console.log(element);
-        $('tbody').append(`<tr> 
-            <th>`+element.name+`</th>
-            <td>`+element.email+`</td> 
-            <td>`+element.password+`</td>
-        </tr>`)
+        $('tbody').append(`<tr>
+                        <td>`+element.name+`</td>
+                        <td>`+element.email+`</td>
+                        <td>`+element.password+`</td>
+                    </tr>`)
     });
 </script>
 </html>
