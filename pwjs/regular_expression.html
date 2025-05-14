@@ -56,7 +56,7 @@
             />
             <small id="helpId"></small>
         </div>
-        <button class="btn-btn-info">Add</button>
+        <button id="sub" class="btn-btn-info">Add</button>
     </div>
     
 </body>
@@ -123,6 +123,33 @@
             $(this).next('small').show().text('required');
         }
         //  console.log(uConfirmPassword);
+ });
+
+ function emptyfields(id){
+    if ($(id).val() == ""){
+          $(id).css('border' , '2px solid red');
+             $(id).next('small').show().text('this field is required');
+    }
+};
+
+ $("#sub").click(function(){
+    let uName = $("#userName").val();
+    let uEmail = $("#userEmail").val();
+    let uPassword = $ ("#userPassword").val();
+    let uConfirmPassword = $ ("#userConfirmPassword").val();
+    emptyfields("#userName");
+    emptyfields("#userEmail");
+    emptyfields("#userPassword");
+    emptyfields("#userConfirmPassword");
+    let uNameRE = /^[a-zA-Z\s]{3,10}$/ ;
+    let uEmailRE = /^[a-zA-Z0-9_.]{4,10}[@][a-z]{5}[.][a-z]{3}$/ ;
+    let uPasswordRE = /^(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[^a-zA-Z0-9]).{8,}$/ ;
+    let users = JSON.parse(localStorage.getItem('student')) || [] ;
+    if (uNameRE.test(uName) && uEmailRE.test(uEmail) && uPasswordRE.test(uPassword)){
+        users.push({'name':uName,'email':uEmail,'password': uPassword});
+        localStorage.setItem('student',JSON.stringify(users));
+        location.assign('select.html');
+ }
  });
 
 
